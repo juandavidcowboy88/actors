@@ -3,6 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 get '/actors'  => 'actors#index'
+get '/actors/new' => 'actors#new'
+post '/actors' => 'actors#create'
+
+
+#resources 'actors'
+
+# resources :actors , only [:index, :new ,:create ]
+#get '/create_actor' => 'actors#create'
+#post '/actors' => 'actors#index'
+
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

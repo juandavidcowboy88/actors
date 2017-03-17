@@ -1,0 +1,41 @@
+
+<h1> FORMULAR VOR SCHAUSPIELRS</h1>
+
+  <%= form_for @actors  do |f| %>
+  <div class="margin-half">
+      <%= f.label :name %>
+      <%= f.text_field :name, :required => 'required', class: 'form-control' %>
+    </div>
+
+    <div class="margin-half">
+      <%= f.label :biography %>
+      <%= f.text_field :bio, :required => 'required', class: 'form-control' %>
+    </div>
+
+    <div class="margin-half">
+      <%= f.label :birth_date %>
+      <%= f.text_field :birth_date, :required => 'required', class: 'form-control' %>
+    </div>
+    <div class="margin-half">
+      <%= f.label :birth_place %>
+      <%= f.text_field :birth_place, :required => 'required', class: 'form-control' %>
+    </div>
+    <div class="margin-half">
+      <%= f.label :alive %>
+      <%= f.text_field :alive, :required => 'required', class: 'form-control' %>
+    </div>
+    <div class="margin-half">
+      <%= f.label :death_date %>
+      <%= f.text_field :death_date , class: 'form-control' %>
+    </div>
+    <div class="margin-half">
+      <%= f.label :death_place %>
+      <%= f.text_field :death_place, class: 'form-control' %>
+    </div>
+
+      <div >
+      <%= f.submit "new", class: 'btn btn-default'  %>
+    </div>
+    </div>
+
+  <%end%>
