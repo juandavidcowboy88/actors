@@ -10,6 +10,8 @@ class ActorsController < ApplicationController
 
       def create
           @actors = Actor.new(actor_params)
+
+          
           if @actors.save
             redirect_to  actors_path , notice: "el actor ha sido creado exitosamente"
           else
